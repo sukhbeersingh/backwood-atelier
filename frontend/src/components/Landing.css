@@ -1,0 +1,36 @@
+.landing-page {
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/main.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+
+
+.roboto-h1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+  font-variation-settings:
+    "wdth" 98.4;
+}
+
+.roboto-h2 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+  font-variation-settings:
+    "wdth" 98.4;
+}
