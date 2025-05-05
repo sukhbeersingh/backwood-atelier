@@ -1,0 +1,105 @@
+.hamburger-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and lines */
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1000;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.hamburger-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.hamburger-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger-lines span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+/* Transform spans into an "X" when the menu is open */
+.hamburger-button.open .hamburger-lines span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-button.open .hamburger-lines span:nth-child(2) {
+  opacity: 0; /* Hide the middle span */
+}
+
+.hamburger-button.open .hamburger-lines span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu screen styles */
+.menu-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0; /* Start hidden */
+  /* Slide out of view */
+  /* transform: translateY(-100%);  */
+  /* Smooth transition */
+  /* transition: opacity 0.3s ease, transform 0.3s ease;  */
+}
+
+.menu-screen.open {
+  opacity: 1; /* Fully visible */
+  /* transform: translateY(0); Slide into view */
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-items li {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: rgb(250, 249, 249);
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}

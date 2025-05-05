@@ -1,3 +1,17 @@
+.landing-header {
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center the header horizontally */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
 .landing-page {
   height: 100vh;
   width: 100wh;
@@ -9,13 +23,11 @@
   background-position: center;
   color: white;
   text-align: center;
-  font-family: Arial, sans-serif;
   overflow: hidden;
 }
 
-
-
 .roboto-h1 {
+  margin-bottom: 0;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -25,12 +37,21 @@
     "wdth" 98.4;
 }
 
+.roboto-h1.sub-heading {
+  margin-top: 8px;
+}
+
 .roboto-h2 {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
   font-variation-settings:
     "wdth" 98.4;
+}
+
+.logo {
+  height: 150px; /* Adjust the logo size */
+  width: auto; /* Maintain aspect ratio */
 }
